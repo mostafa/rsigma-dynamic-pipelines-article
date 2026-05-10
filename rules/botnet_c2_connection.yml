@@ -1,0 +1,25 @@
+title: Connection to Known Botnet C2 Server
+id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+status: experimental
+description: |
+    Detects outbound network connections to IP addresses known to be
+    botnet command-and-control servers. The C2 IP list is dynamically
+    populated from the Feodo Tracker blocklist at runtime via RSigma's
+    dynamic pipeline sources.
+author: Mostafa Moradian
+date: 2026-05-10
+references:
+    - https://feodotracker.abuse.ch/blocklist/
+    - https://github.com/mostafa/rsigma
+tags:
+    - attack.command_and_control
+    - attack.t1071.001
+logsource:
+    category: firewall
+detection:
+    selection:
+        DestinationIp: "%c2_ips%"
+    condition: selection
+falsepositives:
+    - Legitimate services hosted on IPs that were previously used as C2
+level: critical

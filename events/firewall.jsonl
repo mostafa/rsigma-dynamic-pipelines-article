@@ -1,0 +1,6 @@
+{"timestamp":"2026-05-10T14:23:01Z","SourceIp":"10.0.1.42","DestinationIp":"162.243.103.246","DestinationPort":443,"Protocol":"TCP","Action":"allowed","BytesSent":1240,"BytesReceived":8930}
+{"timestamp":"2026-05-10T14:23:05Z","SourceIp":"10.0.1.42","DestinationIp":"8.8.8.8","DestinationPort":53,"Protocol":"UDP","Action":"allowed","BytesSent":64,"BytesReceived":128}
+{"timestamp":"2026-05-10T14:23:12Z","SourceIp":"10.0.1.87","DestinationIp":"50.16.16.211","DestinationPort":443,"Protocol":"TCP","Action":"allowed","BytesSent":2048,"BytesReceived":15360}
+{"timestamp":"2026-05-10T14:23:18Z","SourceIp":"10.0.1.87","DestinationIp":"192.168.1.1","DestinationPort":80,"Protocol":"TCP","Action":"allowed","BytesSent":512,"BytesReceived":1024}
+{"timestamp":"2026-05-10T14:23:25Z","SourceIp":"10.0.1.15","DestinationIp":"34.204.119.63","DestinationPort":443,"Protocol":"TCP","Action":"allowed","BytesSent":3072,"BytesReceived":24576}
+{"timestamp":"2026-05-10T14:23:30Z","SourceIp":"10.0.1.15","DestinationIp":"140.82.121.4","DestinationPort":443,"Protocol":"TCP","Action":"allowed","BytesSent":1024,"BytesReceived":4096}

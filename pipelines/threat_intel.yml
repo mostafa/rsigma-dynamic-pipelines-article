@@ -1,0 +1,27 @@
+name: threat_intel_enriched
+priority: 10
+sources:
+  - id: c2_ips
+    type: http
+    url: https://feodotracker.abuse.ch/downloads/ipblocklist.json
+    format: json
+    extract: "[.[].ip_address]"
+    refresh: 300s
+    timeout: 10s
+    on_error: use_cached
+    required: true
+
+  - id: advisory_domains
+    type: command
+    command: ["python3", "scripts/extract_iocs.py", "advisories/aa25-141b.txt"]
+    format: json
+    extract: ".domains"
+    refresh: once
+    on_error: ignore
+
+vars:
+  c2_ips: "${source.c2_ips}"
+  advisory_domains: "${source.advisory_domains}"
+
+transformations:
+  - type: value_placeholders
