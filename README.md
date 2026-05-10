@@ -29,7 +29,7 @@ Both sources are free and require no authentication.
 
 ## Prerequisites
 
-- [RSigma](https://github.com/mostafa/rsigma) v0.10.0 or later
+- [RSigma](https://github.com/timescale/rsigma) v0.10.0 or later
 - Python 3.9+ with `ioc-finder` installed
 
 ```bash
@@ -67,7 +67,7 @@ rsigma daemon \
   --rules rules/ \
   --pipeline pipelines/threat_intel.yml \
   --input http \
-  --listen 127.0.0.1:8080
+  --api-addr 127.0.0.1:8080
 ```
 
 Then send events to the daemon:
