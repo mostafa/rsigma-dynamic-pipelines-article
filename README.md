@@ -1,8 +1,8 @@
 # RSigma Dynamic Pipelines: Live Threat Intel Demo
 
-Companion repository for the article **"Wiring Live Threat Intel into Sigma Detection with Dynamic Pipelines"** on [mostafa.dev](https://mostafa.dev).
+Companion repository for the article ["Wiring Live Threat Intel into Sigma Detection with Dynamic Pipelines"](https://mostafa.dev/wiring-live-threat-intel-into-sigma-detection-with-dynamic-pipelines-4de29b4af7ca).
 
-This repo demonstrates RSigma v0.10.0's dynamic pipeline feature by wiring two public threat intelligence sources into Sigma detection rules at runtime, without modifying the rules themselves.
+This repo demonstrates RSigma [v0.10.0](https://github.com/timescale/rsigma/releases/tag/v0.10.0)'s dynamic pipeline feature by wiring two public threat intelligence sources into Sigma detection rules at runtime, without modifying the rules themselves.
 
 ## What is in this repo
 
@@ -96,7 +96,7 @@ curl -X POST http://127.0.0.1:8080/api/v1/events \
 2. [Streaming Logs to RSigma for Real-Time Detection](https://mostafa.dev) (Apr 2026)
 3. [Building a Detection Layer on PostgreSQL with Sigma Rules](https://mostafa.dev) (Apr 2026)
 4. [Security Observability with RSigma and the LGTM Stack](https://mostafa.dev) (May 2026)
-5. **Wiring Live Threat Intel into Sigma Detection with Dynamic Pipelines** (this article)
+5. [Wiring Live Threat Intel into Sigma Detection with Dynamic Pipelines](https://mostafa.dev/wiring-live-threat-intel-into-sigma-detection-with-dynamic-pipelines-4de29b4af7ca) (this article)
 
 ## License
 
